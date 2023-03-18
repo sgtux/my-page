@@ -1,0 +1,25 @@
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+title: 'SG Tux'
+theme: "m10c"
+
+params:
+  social:
+    - icon: "github"
+      name: "Meu Github"
+      url: "https://github.com/sgtux"
+    - icon: "linkedin"
+      name: "Meu LinkedIn"
+      url: "https://www.linkedin.com/in/sgtux/"
+    - icon: "instagram"
+      name: "Meu Instagram"
+      url: "https://instagram.com/sgtux/"
+  avatar: "/images/me.jpg"
+  description: "Encontre aqui conteúdo sobre Segurança Defensiva e Ofensiva em Aplicações Web!"
+
+menu:
+  main:
+    - name: ' Home'
+      url: '/'
+    - name: 'About'
+      url: '/about/'
