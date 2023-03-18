@@ -75,7 +75,7 @@ E agora o que podemos fazer para garantir que nosso código não tenha esse tipo
 
 Então segue os exemplos de códigos com a falha de SQL Injection resolvida:
 
-Statement:
+**Solução Statement:**
 ```java
 public Usuario login(String email, String senha) throws SQLException {
     var query = String.format("select * from usuario where email = ? and senha = ?", email, senha);
@@ -100,7 +100,7 @@ public Usuario login(String email, String senha) throws SQLException {
     return usuario;
 }
 ```
-JPA:
+**Solução JPA:**
 ```java
 public Usuario login(String email, String senha) {
     var query = String.format("select * from usuario where email = :email and senha = :senha", email, senha);
@@ -115,7 +115,7 @@ public Usuario login(String email, String senha) {
 }
 ```
 
-JPA com JPQL:
+**Solução JPA com JPQL:**
 ```java
 public Usuario login(String email, String senha) {
     var jpqlquery = String.format("select u from Usuario u where u.email = :email and u.senha = :senha", email, senha);
